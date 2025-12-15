@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>CCA Parking portal</title>
 
     <style>
         * {
@@ -13,7 +13,7 @@
         }
 
         nav {
-            background-color: #0d542b;
+            background-color: #015c25;
             padding: 10px 20px;
             display: flex;
             align-items: center;
@@ -21,6 +21,7 @@
             flex-wrap: wrap; /* Important for mobile breakdown */
             color: white;
             font-family: sans-serif;
+            
         }
 
         .logo img {
@@ -97,6 +98,8 @@
             }
         }
     </style>
+
+
 </head>
 <body>
 
@@ -114,10 +117,10 @@
         </div>
 
         <div class="menu" id="navMenu">
-            <div><a href="#">Home</a></div>
+            <div><a href="">Home</a></div>
             <div><a href="#">About</a></div>
             <div><a href="#">Contact</a></div>
-            <div><a href="#">Login</a></div>
+            <div><a href="{{ route('login') }}">Login</a></div>
         </div>
     </nav>
 

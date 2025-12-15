@@ -10,7 +10,7 @@
     align-items: center;
     height: 89vh;
     gap: 70px;
-     background-color: oklch(52.7% .154 150.069);
+     background-color: #099e45;
      color: white;
 }
 .welcome{
@@ -35,16 +35,17 @@
 }
 
 
-.login{
+.login, .Register{
     width: 400px;
     padding: 20px;
     
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: oklch(41.481% 0.11587 149.243);
+    background-color: #015C25;
 
 
 }
+
 .login h2{
     text-align: center;
     margin-bottom: 20px;
@@ -68,3 +69,51 @@
 
 }
 
+.login button{
+    padding: 10px;
+    background-color: rgb(0, 130, 53);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* 1. Spacing for inputs (replaces the <br> tags) */
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column; /* Stacks label on top of input */
+    text-align: left; /* Aligns text to the left */
+}
+
+/* 2. Input styling */
+.input-group input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* 3. The White Link Logic */
+.white-link {
+    color: #ffffff !important; /* Forces the color to white */
+    text-decoration: none;
+}
+
+.white-link:hover {
+    color: #cccccc; /* Slightly grey when hovering */
+}
+
+/* 4. Submit Button Styling */
+.btn-submit {
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

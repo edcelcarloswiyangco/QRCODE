@@ -31,5 +31,7 @@ class AuthCont extends Controller
 
         // Return to home with success message
         return redirect('/')->with('success', 'Registration successful! You can now log in.');
-    }   
+    } 
+    
+    
 }
